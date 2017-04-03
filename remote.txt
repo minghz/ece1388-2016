@@ -1,0 +1,9 @@
+# first ssh port forward
+ssh -L 5901:127.0.0.1:5901 zhaomin4@ug205.eecg.toronto.edu
+
+# start VNC server on remote computer (if not started already)
+vncserver -geometry 1920x1080 -depth 24 :1
+
+# Start VNC viewer
+Server: 127.0.0.1:1
+Password: <my_student_number>
